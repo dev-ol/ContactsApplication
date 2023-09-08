@@ -1,0 +1,12 @@
+<mat-toolbar id="conproj-main-nav">
+    <mat-toolbar-row>
+        <div id="conproj-logo-area">
+            <h1>MyContactApp</h1>
+        </div>
+
+        <div class="align-right">
+            <span id="username" *ngIf="username" >Welcome, {{username}}</span>
+            <button *ngIf="isLogin" id="logout-btn" mat-button  (click)="logout()" >Logout</button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

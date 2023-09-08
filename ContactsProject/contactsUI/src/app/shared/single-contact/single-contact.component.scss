@@ -1,0 +1,32 @@
+.single-contact-info {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+mat-card{
+    max-width: 400px;
+    border: 1px solid #d5d5d5;
+    padding: 0px 20px;
+    margin-top: 15px;
+}
+
+.contact-name{
+    font-weight: 500;
+font-size: 1.3em;
+margin-bottom: 10px;
+}
+
+.contact-number{
+    color: gray;
+font-weight: 400;
+margin-top: 0px;
+}
+
+mat-card-content{
+    padding-right: 0;
+}
+
+.card-actions{
+    margin-left: 20px;
+}

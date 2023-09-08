@@ -1,0 +1,33 @@
+<div id="edit-contact-form">
+    <div id="form-header">
+      <h2>Edit Contact</h2>
+    </div>
+    <div>
+      <div id="form-div">
+        <form [formGroup]="editContactForm">
+          <div class="">
+            <div class="edit-contact-form-group">
+              <label>First Name</label>
+  
+              <input formControlName="firstname" name="firstname"  placeholder="John"/>
+            </div>
+            <div class="edit-contact-form-group">
+              <label>Last Name</label>
+  
+              <input formControlName="lastname" name="lastname" placeholder="Brown"/>
+            </div>
+            <div id="phone-form-group" class="edit-contact-form-group">
+              <label>Contact #</label>
+  
+              <input formControlName="phoneNumber" name="phoneNumber" placeholder="000-000-0000"/>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="form-buttons">
+        <button id="save-btn" (click)="save()">Save</button>
+        <button id="cancel-btn" (click)="cancel()" >Cancel</button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,39 @@
+<div id="login-form">
+  <div>
+    <div id="form-header">
+      <h2>Sign In</h2>
+    </div>
+    <div>
+      <div id="form-div">
+        <form [formGroup]="loginForm">
+          <div class="">
+            <div class="login-form-group">
+              <label>Email</label>
+
+              <input
+                formControlName="email"
+                name="email"
+                placeholder="email@gmail.com"
+              />
+            </div>
+            <div class="login-form-group">
+              <label>Password</label>
+
+              <input
+                formControlName="password"
+                type="password"
+                name="password"
+                placeholder="*******"
+              />
+             
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="form-buttons">
+        <button id="signin-btn" (click)="signIn()">Sign in</button>
+        <button id="signup-btn" (click)="signUp()">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>

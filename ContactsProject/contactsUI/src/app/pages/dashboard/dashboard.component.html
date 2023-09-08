@@ -1,0 +1,29 @@
+<app-nav-bar></app-nav-bar>
+<div *ngIf="!loading">
+  <div id="heading-section">
+    <div>
+      <h2 class="page-heading">Dashboard</h2>
+    </div>
+    <div class="space-left">
+      <button id="add-new-contact-btn" mat-fab extended class="" (click)="openNewContactModal()">
+        <mat-icon>person_add</mat-icon>
+        <span> New Contact </span>
+      </button>
+    </div>
+  </div>
+
+  <ng-container *ngIf="contactList">
+    <!-- contact list area -->
+    <div class="contact-list">
+      <div *ngFor="let contact of contactList">
+        <app-single-contact [contact]="contact" (deleteEmitter)="deleteContact($event)"></app-single-contact>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<div *ngIf="loading">
+  <div>
+    <p>Loading....</p>
+  </div>
+</div>

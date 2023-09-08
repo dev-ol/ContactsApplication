@@ -1,0 +1,19 @@
+<mat-card *ngIf="contact">
+  <mat-card-content>
+    <div class="single-contact-info">
+        
+      <div>
+        <p class="contact-name">{{contact.firstname}} {{contact.lastname}}</p>
+        <p class="contact-number">{{contact.phone}}</p>
+      </div>
+      <div class="card-actions">
+        <button mat-icon-button (click)="edit()">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="delete()">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

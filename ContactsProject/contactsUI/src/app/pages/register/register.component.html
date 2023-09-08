@@ -1,0 +1,49 @@
+<div id="register-form">
+    <div>
+      <div id="form-header">
+        <h2>Create An Account</h2>
+      </div>
+      <div>
+        <div id="form-div">
+          <form [formGroup]="registerForm">
+            <div class="">
+              <div class="register-form-group">
+                <label>Email</label>
+  
+                <input
+                  formControlName="email"
+                  name="email"
+                  placeholder="email@gmail.com"
+                />
+              </div>
+              <div class="register-form-group">
+                <label>Password</label>
+  
+                <input
+                  formControlName="password"
+                  type="password"
+                  name="password"
+                  placeholder="*******"
+                />
+              </div>
+              <div class="register-form-group">
+                <label>Confirm Password</label>
+  
+                <input
+                  formControlName="confirmPassword"
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="*******"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="form-buttons">
+          <button id="signin-btn" (click)="signUp()">Sign up</button>
+          <button id="signup-btn" (click)="signIn()">Back to Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
